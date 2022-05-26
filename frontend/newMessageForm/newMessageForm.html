@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Message Board</title>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="../index.css" />
+    </head>
+    <body>
+        <form action="/" method="POST" id="newMessageForm">
+            <label for="title">Enter your message title :</label>
+            <br />
+            <input id="title" type="text" name="title" required minlength="3" />
+            <br />
+            <label for="content">Enter your message content :</label>
+            <br />
+            <textarea
+                id="content"
+                name="content"
+                required
+                minlength="3"
+            ></textarea>
+            <br />
+            <button id="submitBtn" type="submit">SUBMIT</button>
+        </form>
+        <script src="newMessageForm.js"></script>
+    </body>
+</html>
