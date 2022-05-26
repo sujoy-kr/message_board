@@ -4,7 +4,6 @@ A message board where users can post a message which is visible only to other us
 
 ## Stack
 
--   Svelte
 -   Node.JS
 -   Express
 -   MongoDB
