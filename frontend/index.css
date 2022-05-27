@@ -8,15 +8,19 @@ h1 {
     margin-bottom: 0;
 }
 
-a {
+#messageFormLink {
     font-weight: bold;
     font-size: 30px;
     color: #F2F2F2;
-    display: block;
-    width: 50%;
     border-radius: 10px;
     margin: auto;
     margin-bottom: 20px;
+}
+
+#loginFormLink {
+    font-size: 25px;
+    color: #F2F2F2;
+    margin-left: 50px;
 }
 
 body {
@@ -61,5 +65,25 @@ body {
     font-weight: bold;
     color: #263238;
     font-size: 20px;
+    cursor: pointer;
+}
+
+#loginForm input {
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #F2F2F2;
+    color: #263238;
+}
+
+#loginBtn {
+    width: 100px;
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
     cursor: pointer;
 }

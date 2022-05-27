@@ -12,18 +12,19 @@
             href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" type="text/css" href="../index.css" />
     </head>
     <body>
-        <h1>
-            All Messages
-            <a id="loginFormLink" href="./loginForm/loginForm.html">Log-in</a>
-        </h1>
-        <a id="messageFormLink" href="newMessageForm/newMessageForm.html"
-            >Got something to say?</a
-        >
-
-        <ul id="messageList"></ul>
-        <script src="./index.js"></script>
+        <form action="/" method="POST" id="loginForm">
+            <h1>Log In</h1>
+            <label for="username">Enter your username :</label>
+            <input id="username" type="text" name="username" required />
+            <br />
+            <label for="password">Enter your password :</label>
+            <input id="password" type="password" name="username" required />
+            <br />
+            <button id="loginBtn" type="submit">Log in</button>
+        </form>
+        <script src="loginForm.js"></script>
     </body>
 </html>
