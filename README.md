@@ -1,6 +1,6 @@
 # Message Board
 
-A message board where users can post a message which is visible only to other users.
+A message board where users can see all messages posted by other users but posting one requires login.
 
 ## Stack
 
