@@ -16,18 +16,21 @@
     </head>
     <body>
         <form action="/" method="POST" id="loginForm">
-            <h1>Log In</h1>
+            <h1>Sign Up</h1>
             <label for="username">Username :</label>
             <input id="username" type="text" name="username" required />
+            <br />
+            <label for="name">Name :</label>
+            <input id="name" type="text" name="name" required />
             <br />
             <label for="password">Password :</label>
             <input id="password" type="password" name="username" required />
             <br />
-            <button id="loginBtn" type="submit">Log in</button>
+            <button id="loginBtn" type="submit">Sign Up</button>
         </form>
-        <script src="loginForm.js"></script>
-        <a id="regLink" href="../regForm/regForm.html"
-            >Need an account? SIGN-UP</a
+        <a id="regLink" href="../loginForm/loginForm.html"
+            >Already have an account? LOG-IN</a
         >
+        <script src="regForm.js"></script>
     </body>
 </html>

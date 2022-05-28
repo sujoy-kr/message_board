@@ -87,3 +87,7 @@ body {
     margin-top: 30px;
     cursor: pointer;
 }
+
+#regLink {
+    color: #F2F2F2;
+}

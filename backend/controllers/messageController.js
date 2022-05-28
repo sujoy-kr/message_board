@@ -2,7 +2,7 @@ const Message = require('../models/Message')
 const mongoose = require('mongoose')
 
 const getAllMessages = async (req, res) => {
-    const messages = await Message.find({})
+    const messages = await Message.find({}).sort('-createdAt')
     res.json(messages)
 }
 
