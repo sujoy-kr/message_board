@@ -29,7 +29,7 @@ mongoose.connect(config.MONGO_URL)
 
 app.use(require('./routes'))
 
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction = config.NODE_ENV === 'production'
 if (!isProduction) {
     app.use(errorHandler())
 }

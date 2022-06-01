@@ -2,7 +2,7 @@ const Message = require('../models/Message')
 const mongoose = require('mongoose')
 
 const getAllMessages = async (req, res) => {
-    const messages = await Message.find({}).sort('-createdAt')
+    const messages = await Message.find({}).sort('-createdAt').populate('user')
     res.json(messages)
 }
 
@@ -16,10 +16,11 @@ const getMessageById = async (req, res, next) => {
 }
 
 const createMessage = async (req, res, next) => {
-    const { title, content } = req.body
+    const { title, content, user } = req.body
     const message = new Message({
         title,
         content,
+        user,
     })
     try {
         await message.save()
