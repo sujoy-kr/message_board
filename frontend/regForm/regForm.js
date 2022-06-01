@@ -20,6 +20,7 @@ const registerAnUser = (e) => {
         },
         body: JSON.stringify(user),
     })
+
     location.href = '../index.html'
 }
 

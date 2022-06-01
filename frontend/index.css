@@ -91,3 +91,21 @@ body {
 #regLink {
     color: #F2F2F2;
 }
+
+#infoAfterLogin * {
+    display: inline-block;
+
+}
+
+#infoAfterLogin button {
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#infoAfterLogin {
+    display: none
+}

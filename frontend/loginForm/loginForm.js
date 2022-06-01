@@ -1,25 +1,30 @@
-const postMessage = (e) => {
+const userLogin = async (e) => {
     e.preventDefault()
     console.log(e)
-    const title = document.getElementById('title').value
-    const content = document.getElementById('content').value
-    console.log(title, content)
+    const username = document.getElementById('username').value
+    const password = document.getElementById('password').value
 
     // post message to Server
-    fetch('http://localhost:3001/api/message', {
+    const returnedData = await fetch('http://localhost:3001/api/user/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            title: title,
-            content: content,
+            username: username,
+            password: password,
         }),
     })
+
+    // save returned data to local storage
+    const data = await returnedData.json()
+    localStorage.setItem('token', data.token)
+    localStorage.setItem('userId', data.id)
+    localStorage.setItem('name', data.name)
 
     location.href = '../index.html'
 }
 
-const submitBtn = document.getElementById('submitBtn')
+const loginBtn = document.getElementById('loginBtn')
 
-submitBtn.addEventListener('click', postMessage)
+loginBtn.addEventListener('click', userLogin)
